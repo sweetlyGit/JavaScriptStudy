@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<style type="text/css">
+	</style>
+
+
+	<div>
+		<button id='btn'>点击</button>
+	</div>
+
+
+	<script>
+		let _params = {
+			interfaceName: "jsToLocation",
+			params: '444'
+		};
+		document.getElementById('btn').addEventListener('click', function () {
+			try {
+				window.NativeJavaScriptInterface.postMessage(_strParams);
+			} catch (e) {
+				alert(e + '')
+			}
+
+		})
+	</script>
+
+</html>
